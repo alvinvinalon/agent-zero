@@ -71,7 +71,7 @@ def get_azure_openai_instruct(deployment_name:str, api_key=None, temperature=DEF
 def get_azure_openai_embedding(deployment_name:str, api_key=None, azure_endpoint=None):
     api_key = api_key or get_api_key("openai_azure")
     azure_endpoint = azure_endpoint or os.getenv("OPENAI_AZURE_ENDPOINT")
-    return AzureOpenAIEmbeddings(deployment_name=deployment_name, api_key=api_key, azure_endpoint=azure_endpoint) # type: ignore
+    return AzureOpenAIEmbeddings(model=deployment_name, api_key=api_key, azure_endpoint=azure_endpoint) # type: ignore
 
 # Google models
 def get_google_chat(model_name:str, api_key=None, temperature=DEFAULT_TEMPERATURE):
