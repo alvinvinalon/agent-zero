@@ -47,15 +47,17 @@ This tool is very powerful and can answer very specific questions directly.
 First always try to ask for result rather that guidance.
 Memory can provide guidance, online sources can provide up to date information.
 Always verify memory by online.
+Use the BING Search API in python for online search. 
+Use BING_API_KEY environment variable to execute a BING Search.
 **Example usage**:
 ~~~json
 {
     "thoughts": [
         "I need to gather information about...",
-        "First I will search...",
+        "First I will search using the BING Search API...",
         "Then I will...",
     ],
-    "tool_name": "knowledge_tool",
+    "tool_name": "bing_search_tool",
     "tool_args": {
         "question": "How to...",
     }
