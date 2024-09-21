@@ -47,7 +47,7 @@ This tool is very powerful and can answer very specific questions directly.
 First always try to ask for result rather that guidance.
 Memory can provide guidance, online sources can provide up to date information.
 Always verify memory by online.
-Use the BING Search API in python for online search. 
+Use the BING Search API in python for online search using the top 3 search results. 
 Use BING_API_KEY environment variable to execute a BING Search.
 **Example usage**:
 ~~~json
